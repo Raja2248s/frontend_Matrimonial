@@ -1,0 +1,392 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #f0d6d6;
+  background-image: url('./assets/marriage1.jpg');
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-repeat:repeat-y
+}
+
+.field input[type="text"], 
+.field input[type="password"] {
+  color: black; /* Set the input text color to black */
+}
+
+.field ::ng-deep ::placeholder {
+  color: #ffcccc; /* Set the placeholder text color to pink */
+}
+
+.field label {
+    font-weight: bold; /* Set the font weight to bold for label text */
+  }
+
+  .link {
+    margin-top: 2rem; /* Adjust the margin as needed */
+  }
+  .mt-2 {
+    margin-top: 2rem; /* Adjust the margin as needed */
+    padding: 1rem; /* Adjust the padding as needed */
+  }
+  a[routerLink="/login"] {
+    font-weight: bold; /* Set the font weight to bold */
+    background-color: black; /* Set the background color to black */
+    color: #ffcccc; /* Set the text color to pink */
+    padding: 0.5rem; 
+    border-radius: 5px solid pink;/* Add padding for better readability */
+  }
+  a[routerLink="/register"] {
+    font-weight: bold; /* Set the font weight to bold */
+    background-color: black; /* Set the background color to black */
+    color: #ffcccc; /* Set the text color to pink */
+    padding: 0.5rem; 
+    border-radius: 5px solid pink;/* Add padding for better readability */
+  }
+
+  .navbar {
+    text-align: center;
+    background-color: #333; /* Dark background color for the navbar */
+    color: #fff; /* Text color for navbar links */
+    padding: 10px 0; /* Padding around the navbar */
+  }
+  
+  .container {
+   
+    margin: 0 auto; /* Center the content */
+  }
+  .form-wrapper  {
+    
+   max-height: 100vh;
+   margin: 0 auto; /* Center the content */
+ }
+  .brand {
+    font-size: 1.5rem; /* Larger font size for brand/logo */
+    color: #fff; /* Text color for brand/logo */
+    text-decoration: none;
+    display: inline-block; /* Remove underline from link */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+ nav img{
+  width: 75px;
+  position: fixed;
+right: 5%;
+  top: -5px;
+  
+  display: flex;
+ }
+ nav .text{
+  display: flex;
+  position: fixed;
+  right: 10%;
+  margin-right: 2.5rem;
+  top: 0.1rem;
+  color: black;
+  padding: 7px;
+  border-radius: 10px;
+  font-weight: 900;
+ }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Add margin between list items */
+  }
+  nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+  .nav-links li:last-child {
+    margin-right: 0; /* Remove margin from last navigation link */
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: #98FF98;
+  }
+  .nav-links li a {
+    color: #fff; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px 20px; /* Add padding as needed */
+  margin-bottom: 0px;
+  }
+  .container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+    height: 100vh; /* Make container take full height of viewport */
+}
+
+h1 {
+    margin-right: 20px; /* Add some space between title and form */
+}
+
+.form-wrapper {
+  width: 360px;
+    display: grid;
+    justify-items: center; /* Center items horizontally within the grid */
+}
+
+.registration-form {
+    width: 100%; /* Make the form take full width of its container */
+    max-width: 360px; /* Limit the width of the form */
+}
+
+.image-container {
+  
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.image-container img {
+  justify-content: center;
+  height: auto;
+  max-width: 400px; /* Set the maximum width of the image */
+  max-height: 400px;
+}
+
+.title-overlay {
+ position: relative;
+  top: 9%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding: 0px;
+  color: rgb(50, 40, 40);
+}
+
+
+.title-overlay h1 {
+  margin: 0;
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 100;
+  font-style: inherit;
+  font-size: 60px;
+}
+
+.text {
+     /* Red background color */
+
+    color: #98FF98; /* White text color */
+    padding: 8px 16px; /* Padding around the text */
+    border: none; /* Remove border */
+    border-radius: 100px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    align-items: center;
+    justify-content: center;
+   margin-top: 10px;
+  }
+  
+  .text:hover {
+    background-color:#98FF98 ; /* Darker red on hover */
+  }
+.items{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  /* padding-top: 60px; */
+  margin-top: 45rem;
+}
+.first_item{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.first_item_img{
+  max-width: 250px;
+  height: auto;
+  margin-top: 0;
+  margin-right: 20rem;
+  justify-content: flex-start;
+  border-radius: 110px;
+}
+.first_item_detail{
+  background-color: #98FF98;
+  /* margin-left: 15rem; */
+    margin-right: 15rem;
+    padding: 10px; /* Add padding for better appearance */
+  border-radius: 20px;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+.welcome_message{
+  background-color: rgb(88, 145, 156);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+/* src/app/admin-user-page/admin-user-page.component.css */
+
+
+/* src/app/admin-user-page/admin-user-page.component.css */
+
+.admin{
+  
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'Jersey 10 Charted', sans-serif;
+  /* background-color: #98FF98; */
+}
+
+/* src/app/admin-user-page/admin-user-page.component.css */
+:host {
+  display: block;
+  padding-top: 70px; /* Ensure it matches your header height */
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Add some space between the table and any content above it */
+}
+
+.user-table th, .user-table td {
+  padding: 12px; /* Add padding for better spacing */
+  text-align: left;
+  border-bottom: 3px solid #ddd;
+}
+
+.user-table th , .user-table thead {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+}
+
+.user-table tr.even {
+  background-color: #f9f9f9;
+}
+
+.user-table tr.odd {
+  background-color: #ffffff;
+}
+
+.user-table tr:hover {
+  background-color: #e2e2e2; /* Add a hover effect for better user experience */
+}
+
+.user-table tr + tr {
+  border-top: 3px solid #ddd; /* Separate rows with a border */
+}
+
+ .admin_header{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  font-family: 'Jersey 10 Charted', sans-serif;
+}
+.table_header{
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+  font-family: 'Jersey 10 Charted', sans-serif;
+}
+
+.container_inside {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+.mat-tab-body-wrapper {
+  background-color: #f9f9f9; /* Set a background color for the tab content area */
+  padding: 20px;
+}
+
+.info-heading {
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 20px;
+ border: 5px solid #98FF98;
+}
+
+.mat-tab-labels {
+  background-color: #f0f0f0; /* Set a background color for the tab headers */
+  border-radius: 5px;
+}
+
+.mat-tab-header-pagination {
+  background-color: #007bff; /* Set a background color for the tab header navigation buttons */
+  color: #fff;
+}
+
+.mat-tab-header-pagination:disabled {
+  background-color: #999; /* Disable style for the tab header navigation buttons */
+}
+
+.mat-tab-label {
+  color: #007bff; /* Set tab header label color */
+  font-weight: bold;
+}
+
+.mat-tab-label-active {
+  color: #333; /* Set active tab header label color */
+}
+
+.mat-tab-body {
+  border: 1px solid #ddd; /* Add border around tab content area */
+  border-radius: 5px;
+}
+
+.mat-mdc-tab .mdc-tab__content{
+  margin:20px
+}
+strong{
+  margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: green;
+    padding: 6px;
+    border-radius: 13px;
+    color: #f0d6d6;
+    font-weight: 700;
+}
+
+.button{
+  margin-left: 37rem;
+  margin-top: 4rem;
+}
+
+.details{
+  margin-left: 0.5rem;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

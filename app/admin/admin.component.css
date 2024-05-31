@@ -1,0 +1,67 @@
+/* General Admin Styles */
+.admin {
+    padding: 20px;
+  }
+  
+  .admin_header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading and Error Messages */
+  .loading,
+  .error {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* User Table Styles */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table_header,
+  .user-table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table_header th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .user-table td {
+    padding: 10px;
+  }
+  
+  /* Alternate Row Colors */
+  .user-table tr.even {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table tr.odd {
+    background-color: #fff;
+    background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=O%2foYaE%2bc&id=8EB81F8A079FE4182D233ED23727B9249F6BE26D&thid=OIP.O_oYaE-cirt4teK34ZukhAHaDe&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f58%2fdf%2f9e%2f58df9ef948a48f04f6dc0d7642aadcb8.jpg&exph=375&expw=800&q=Marriage+PPT+BG&simid=608011557066601659&FORM=IRPRST&ck=A57459A0ACF74572AE1790EDCA22BBDD&selectedIndex=52&itb=0);
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .btn-success {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  

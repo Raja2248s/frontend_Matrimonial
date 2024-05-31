@@ -1,0 +1,33 @@
+<app-header></app-header>
+<!-- src/app/update-user-info/update-user-info.component.html -->
+<div class="container">
+    <h2>Update User Info</h2>
+    <form (ngSubmit)="updateFamilyInfo()" class="user-info-form">
+      <div class="form-group">
+        <label for="fatherName">father Name </label>
+        <input type="text" id="fatherName" [(ngModel)]="familyInfo.fatherName" name="fatherName" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="familyStatus">Family Status</label>
+        <select id="familyStatus" [(ngModel)]="familyInfo.familyStatus" name="familyStatus" class="form-control" required>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Divorced">Divorced</option>
+          <option value="Widowed">Widowed</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="familyType">Family Type</label>
+        <select id="familyType" [(ngModel)]="familyInfo.familyType" name="familyType" class="form-control" required>
+          <option value="Nuclear">Nuclear</option>
+          <option value="Extended">Extended</option>
+          <option value="Single Parent">Single Parent</option>
+          <option value="Blended">Blended</option>
+        </select>
+      </div>
+      
+      <!-- Add more fields as needed -->
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>

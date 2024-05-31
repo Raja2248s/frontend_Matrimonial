@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wedding Matrimony</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f6af04">
+  <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="C:\Users\sksan\OneDrive\Desktop\Angular-Firebase-crud-main\src\app\edu-info\css\bootstrap.css">
+  <link rel="stylesheet"href="C:\Users\sksan\OneDrive\Desktop\Angular-Firebase-crud-main\src\app\edu-info\css\font-awesome.min.css">
+  <link rel="stylesheet" href="C:\Users\sksan\OneDrive\Desktop\Angular-Firebase-crud-main\src\app\edu-info\css\animate.min.css">
+  <link rel="stylesheet" href="C:\Users\sksan\OneDrive\Desktop\Angular-Firebase-crud-main\src\app\edu-info\css\style.css">
+
+  <style>
+    /* Additional CSS styles */
+    .login .container .row .inn .rhs form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .login .container .row .inn .rhs form input[type="text"],
+    .login .container .row .inn .rhs form input[type="email"],
+    .login .container .row .inn .rhs form input[type="tel"],
+    .login .container .row .inn .rhs form input[type="number"],
+    .login .container .row .inn .rhs form input[type="date"],
+    .login .container .row .inn .rhs form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login .container .row .inn .rhs form #message {
+      margin-top: 10px;
+    }
+
+    .login .container .row .inn .rhs form #message p {
+      margin-bottom: 5px;
+    }
+
+    .login .container .row .inn .rhs form #submitButton {
+      width: 100%;
+      padding: 10px;
+      background-color: #f6af04;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+
+    .login .container .row .inn .rhs form #submitButton:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .login .container .row .inn .rhs form #submitButton:hover {
+      background: rgb(206, 27, 110);
+      border: 1px solid rgb(206, 27, 110);
+      transition: all 0.3s ease 0s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- HEADER & MENU -->
+  <div class="head-top">
+    <div class="container">
+      <div class="row">
+        <div class="lhs">
+          <ul>
+            <li><a href="#!" class="ser-open"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="rhs">
+          <ul>
+            <li><a href="tel:+9704462944"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+91 9351300276</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; helpcompany.com</a></li>
+            <li><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER & MENU -->
+
+  <!-- HEADER & MENU -->
+  <div class="hom-top">
+    <div class="container">
+      <div class="row">
+        <div class="hom-nav">
+          <!-- LOGO -->
+          <div class="logo">
+            <span class="menu desk-menu">
+              <i></i><i></i><i></i>
+            </span>
+            <a href="index.html" class="logo-brand"><img src="images/logo-b.png" alt="" loading="lazy"
+                class="ic-logo"></a>
+          </div>
+
+          <!-- TOP MENU -->
+          <div class="bl">
+            <ul>
+              <li class="smenu-pare">
+                <span class="smenu">Explore</span>
+                <div class="smenu-open smenu-box">
+                  <div class="container">
+                    <div class="row">
+                      <h4 class="tit">Explore category</h4>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="smenu-pare">
+                <span class="smenu">All pages</span>
+                <div class="smenu-open smenu-multi">
+                  <div class="container">
+                    <div class="row">
+                      <div class="multi-col">
+                        <div class="inn">
+                        </div>
+                      </div>
+                      <div class="multi-col">
+                        <div class="inn">
+                        </div>
+                      </div>
+                      <div class="multi-col">
+                        <div class="inn">
+                        </div>
+                      </div>
+                      <div class="multi-col">
+                        <div class="inn">
+
+                        </div>
+                      </div>
+                      <div class="multi-col full">
+                        <div class="inn">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="smenu-pare">
+                <span class="smenu">Top pages</span>
+                <div class="smenu-open smenu-single">
+                </div>
+              </li>
+              <li><a href="#">Plans</a></li>
+
+              <li class="smenu-pare">
+                <span class="smenu">Dashboard</span>
+                <div class="smenu-open smenu-single">
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER & MENU -->
+
+  <section>
+    <div class="login">
+      <div class="container">
+        <div class="row">
+          <div class="inn">
+            <div class="lhs">
+              <div class="tit">
+                <h2>Now <b>Find your life partner</b> Easy and fast.</h2>
+              </div>
+              <div class="im">
+                <img src="./images/login-couple.png" alt="">
+              </div>
+              <div class="log-bg"> &nbsp;</div>
+            </div>
+            <div class="rhs">
+              <div>
+                <div class="container">
+                  <form class="pure-form" method="POST" id="registrationForm" (ngSubmit)="formsubmit()" >
+                    <h2>Education & Career Information</h2>
+                <label for="educationLevel">Education Level:</label>
+                <select [(ngModel)]="user.educationLevel" id="educationLevel" name="educationLevel" required>
+                    <option value="">Select</option>
+                    <option value="High School">High School</option>
+                    <option value="Associate's Degree">Associate's Degree</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Doctorate">Doctorate</option>
+                </select>
+    
+                <label for="fieldOfEducation">Field of Education:</label>
+                <input [(ngModel)]="user.educationFiled" type="text" id="fieldOfEducation" name="fieldOfEducation" required>
+    
+               
+                    <button type="submit" class="pure-button pure-button-primary" id="submitButton" (click)="register">Submit</button>
+
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select-opt.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    var password = document.getElementById("password");
+    var confirm_password = document.getElementById("confirm_password");
+    var myInput = document.getElementById("password");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+    var submitButton = document.getElementById("submitButton");
+
+    // Function to validate password confirmation
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+
+    // Show message box on password focus
+    myInput.onfocus = function () {
+      document.getElementById("message").style.display = "block";
+    }
+
+    // Hide message box when focus is lost
+    myInput.onblur = function () {
+      document.getElementById("message").style.display = "none";
+    }
+
+    // Validate password on keyup event
+    myInput.onkeyup = function () {
+      var lowerCaseLetters = /[a-z]/g;
+      var upperCaseLetters = /[A-Z]/g;
+      var numbers = /[0-9]/g;
+
+      // Validate lowercase letters
+      if (myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+      }
+
+      // Validate capital letters
+      if (myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+
+      // Validate numbers
+      if (myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+
+      // Validate length
+      if (myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+
+      // Check if all fields are filled
+      var allFieldsFilled = Array.from(document.querySelectorAll('input[required]')).every(input => input.value.trim() !== '');
+      if (allFieldsFilled) {
+        submitButton.removeAttribute('disabled');
+      } else {
+        submitButton.setAttribute('disabled', 'enabled');
+      }
+    }
+
+    // Validate password confirmation on change
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+  </script>
+
+</body>
+
+</html>
+
+
+
+

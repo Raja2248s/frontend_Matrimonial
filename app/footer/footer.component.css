@@ -1,0 +1,36 @@
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer a:hover {
+    color: #ff9900;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .footer .social-icons li {
+    list-style: none;
+    margin-right: 10px;
+  }
+  
+  .footer .social-icons a {
+    color: inherit;
+  }
+  

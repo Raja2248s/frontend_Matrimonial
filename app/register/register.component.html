@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wedding Matrimony</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f6af04">
+  <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+  <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\register\css\bootstrap.css">
+  <link rel="stylesheet"
+    href="D:\Personal projects\Angular-Firebase-crud-main\src\app\register\css\font-awesome.min.css">
+  <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\register\css\animate.min.css">
+  <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\register\css\style.css">
+
+  <style>
+    /* Additional CSS styles */
+    .login .container .row .inn .rhs form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .login .container .row .inn .rhs form input[type="text"],
+    .login .container .row .inn .rhs form input[type="email"],
+    .login .container .row .inn .rhs form input[type="tel"],
+    .login .container .row .inn .rhs form input[type="number"],
+    .login .container .row .inn .rhs form input[type="date"],
+    .login .container .row .inn .rhs form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login .container .row .inn .rhs form #message {
+      margin-top: 10px;
+    }
+
+    .login .container .row .inn .rhs form #message p {
+      margin-bottom: 5px;
+    }
+
+    .login .container .row .inn .rhs form #submitButton {
+      width: 100%;
+      padding: 10px;
+      background-color: #f6af04;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+
+    .login .container .row .inn .rhs form #submitButton:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .login .container .row .inn .rhs form #submitButton:hover {
+      background: rgb(206, 27, 110);
+      border: 1px solid rgb(206, 27, 110);
+      transition: all 0.3s ease 0s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- HEADER & MENU -->
+  <div class="head-top">
+    <div class="container">
+      <div class="row">
+        <div class="lhs">
+          <ul>
+            <li><a href="#!" class="ser-open"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="rhs">
+          <ul>
+            <li><a href="tel:+9704462944"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+91 9351300276</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; helpcompany.com</a></li>
+            <li><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER & MENU -->
+
+  <!-- HEADER & MENU -->
+  <div class="hom-top">
+    <div class="container">
+      <div class="row">
+        <div class="hom-nav">
+          <!-- LOGO -->
+          <div class="logo">
+            <span class="menu desk-menu">
+              <i></i><i></i><i></i>
+            </span>
+            <a href="index.html" class="logo-brand"><img src="images/logo-b.png" alt="" loading="lazy"
+                class="ic-logo"></a>
+          </div>
+
+          <!-- TOP MENU -->
+          <div class="bl">
+            <ul>
+              <li class="smenu-pare">
+                <span class="smenu">Explore</span>
+                <div class="smenu-open smenu-box">
+                  <div class="container">
+                    <div class="row">
+                      <h4 class="tit">Explore category</h4>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="smenu-pare">
+                <span class="smenu">All pages</span>
+                <div class="smenu-open smenu-multi">
+                  <div class="container">
+                    <div class="row">
+                      <div class="multi-col">
+                        <div class="inn">
+                        </div>
+                      </div>
+                      <div class="multi-col">
+                        <div class="inn">
+                        </div>
+                      </div>
+                      <div class="multi-col">
+                        <div class="inn">
+                        </div>
+                      </div>
+                      <div class="multi-col">
+                        <div class="inn">
+
+                        </div>
+                      </div>
+                      <div class="multi-col full">
+                        <div class="inn">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="smenu-pare">
+                <span class="smenu">Top pages</span>
+                <div class="smenu-open smenu-single">
+                </div>
+              </li>
+              <li><a href="#">Plans</a></li>
+
+              <li class="smenu-pare">
+                <span class="smenu">Dashboard</span>
+                <div class="smenu-open smenu-single">
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END HEADER & MENU -->
+
+  <section>
+    <div class="login">
+      <div class="container">
+        <div class="row">
+          <div class="inn">
+            <div class="lhs">
+              <div class="tit">
+                <h2>Now <b>Find your life partner</b> Easy and fast.</h2>
+              </div>
+              <div class="im">
+                <img src="./images/login-couple.png" alt="">
+              </div>
+              <div class="log-bg"> &nbsp;</div>
+            </div>
+            <div class="rhs">
+              <div>
+                <div class="form-tit">
+                  <h4>Start for free</h4>
+                  <h1>Sign up to Matrimony</h1>
+                  <p>Already a member? <a href="/login">Login</a></p>
+                </div>
+                <div class="container">
+                  <form class="pure-form" method="POST" id="registrationForm" (ngSubmit)="formSubmit($event)">
+
+
+                    <label for="usrname">Full Name</label>
+                    <input [(ngModel)]="user.userName" type="text" id="usrname" name="usrname" pattern=".{3,}"
+                      title="Full Name must be at least 3 characters long" required>
+
+                    <label for="email">Email</label>
+                    <input [(ngModel)]="user.email" type="email" id="email" name="email" [(ngModel)]="email" required>
+                    <button type="button" class="btn btn-primary" (click)="redirectToVerification()">Verify Email</button>
+
+                    <label for="phone">Phone Number</label>
+                    <input [(ngModel)]="user.phoneno" type="tel" id="phone" name="phone" pattern="[6-9][0-9]{9}"
+                      title="Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9" required>
+
+                    <label for="password">Password</label>
+                    <input [(ngModel)]="user.password" type="password" placeholder="Password" id="password" name="password"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                      [(ngModel)]="password" required>
+
+
+                    <!-- <div id="message">
+                                          <h3>Password must contain the following:</h3>
+                                          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                                          <p id="number" class="invalid">A <b>number</b></p>
+                                          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                                        </div>
+                                   -->
+                    <button type="submit" class="pure-button pure-button-primary" id="submitButton"
+                      (click)="register()">Submit</button>
+                      <!-- <button type="submit" class="pure-button pure-button-primary" id="submitButton" >Submit</button> -->
+
+
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select-opt.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    var password = document.getElementById("password");
+    var confirm_password = document.getElementById("confirm_password");
+    var myInput = document.getElementById("password");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+    var submitButton = document.getElementById("submitButton");
+
+    // Function to validate password confirmation
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+
+    // Show message box on password focus
+    myInput.onfocus = function () {
+      document.getElementById("message").style.display = "block";
+    }
+
+    // Hide message box when focus is lost
+    myInput.onblur = function () {
+      document.getElementById("message").style.display = "none";
+    }
+
+    // Validate password on keyup event
+    myInput.onkeyup = function () {
+      var lowerCaseLetters = /[a-z]/g;
+      var upperCaseLetters = /[A-Z]/g;
+      var numbers = /[0-9]/g;
+
+      // Validate lowercase letters
+      if (myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+      }
+
+      // Validate capital letters
+      if (myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+
+      // Validate numbers
+      if (myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+
+      // Validate length
+      if (myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+
+      // Check if all fields are filled
+      var allFieldsFilled = Array.from(document.querySelectorAll('input[required]')).every(input => input.value.trim() !== '');
+      console.log("All fields filled:", allFieldsFilled); // Add this line to check the value
+
+      if (allFieldsFilled) {
+        submitButton.removeAttribute('disabled');
+      } else {
+        submitButton.setAttribute('disabled', 'enabled');
+      }
+    }
+
+    // Validate password confirmation on change
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+  </script>
+
+</body>
+
+</html>
+
+
+
+<!-- <div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <h4 class="text-dark text-muted">Register</h4>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                        </div>
+                        <button type="button" class="btn btn-info" (click)="register()">Register</button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="/login" style="text-decoration: none;">Have an account ? <span class="text-danger">Login</span></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div> -->

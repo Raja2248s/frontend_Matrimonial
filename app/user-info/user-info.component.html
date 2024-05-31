@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html><html lang="en"><head>
+    <title>Wedding Matrimony</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#f6af04">
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+     <link rel="stylesheet" href="C:\Users\sksan\Downloads\Angular-Firebase-crud-main\src\app\info\css\bootstrap.css">
+    <link rel="stylesheet" href="C:\Users\sksan\Downloads\Angular-Firebase-crud-main\src\app\info\css\font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\sksan\Downloads\Angular-Firebase-crud-main\src\app\info\css\animate.min.css">
+    <link rel="stylesheet" href="C:\Users\sksan\Downloads\Angular-Firebase-crud-main\src\app\info\css\style.css"> 
+</head>
+
+<body>
+    <!-- HEADER & MENU -->
+    <div class="head-top">
+        <div class="container">
+            <div class="row">
+                <div class="lhs">
+                    <ul>
+                        <li><a href="#!" class="ser-open"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="rhs">
+                    <ul>
+                        <li><a href="tel:+9704462944"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+91 9351300276</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; helpcompany.com</a></li> 
+                        <li><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER & MENU -->
+
+    <!-- HEADER & MENU -->
+    <div class="hom-top">
+        <div class="container">
+            <div class="row">
+                <div class="hom-nav">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <span class="menu desk-menu">
+                            <i></i><i></i><i></i>
+                        </span>
+                        <a href="index.html" class="logo-brand"><img src="images/logo-b.png" alt="" loading="lazy" class="ic-logo"></a>
+                    </div>
+
+                    <!-- TOP MENU -->
+                    <div class="bl">
+                        <ul>
+                            <li class="smenu-pare">
+                                <span class="smenu">Explore</span>
+                                <div class="smenu-open smenu-box">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h4 class="tit">Explore category</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="smenu-pare">
+                                <span class="smenu">All pages</span>
+                                <div class="smenu-open smenu-multi">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                </div>
+                                            </div>
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                </div>
+                                            </div>
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                </div>
+                                            </div>
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="multi-col full">
+                                                <div class="inn">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="smenu-pare">
+                                <span class="smenu">Top pages</span>
+                                <div class="smenu-open smenu-single">
+                                </div>
+                            </li>
+                            <li><a href="#">Plans</a></li>
+                            <li><a href="/dashboard">Home</a></li>
+                            
+                            <li class="smenu-pare">
+                                <span class="smenu">Dashboard</span>
+                                <div class="smenu-open smenu-single">
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER & MENU -->
+
+    <!-- LOGIN -->
+    <br>
+    <br>
+    <section>
+        <form action="#" method="POST" enctype="multipart/form-data" (ngSubmit)="formsubmit()">
+            <section>
+                <h1>User Information</h1>
+                <label  for="name">First Name:</label>
+                <input [(ngModel)]="user.firstName" type="text" id="name" name="name" required>
+                <label  for="name">Last Name:</label>
+                <input [(ngModel)]="user.lastName" type="text" id="name" name="name" required>
+    
+    
+                <label for="address">Address:</label>
+                <input [(ngModel)]="user.address" type="text" id="address" name="address" required>
+                <label for="guestName">Guest no:</label>
+                <input  [(ngModel)]="user.noOfGuest"type="number" id="guestName" name="guestName">
+            
+                <label for="gender">Gender:</label>
+                <select [(ngModel)]="user.gender" id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            
+                <label for="dateOfFunction">Date of Function:</label>
+                <input [(ngModel)]="user.dateofFunction" type="date" id="dateOfFunction" name="dateOfFunction" required>
+    
+                <label for="contact">Contact:</label>
+                <input type="tel" [(ngModel)]="user.mobileNum" id="contact" name="contact" required>
+    
+               
+            </section>
+    
+            <!-- <section>
+                <h2>Family Information</h2>
+                <label for="familyStatus">Family Status:</label>
+                <select id="familyStatus" name="familyStatus" required>
+                    <option value="">Select</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+    
+                <label for="familyType">Family Type:</label>
+                <select id="familyType" name="familyType" required>
+                    <option value="">Select</option>
+                    <option value="Nuclear">Nuclear</option>
+                    <option value="Extended">Extended</option>
+                    <option value="Single Parent">Single Parent</option>
+                    <option value="Blended">Blended</option>
+                </select>
+    
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+            </section> -->
+    
+            <!-- <section>
+                <h2>Education & Career Information</h2>
+                <label for="educationLevel">Education Level:</label>
+                <select id="educationLevel" name="educationLevel" required>
+                    <option value="">Select</option>
+                    <option value="High School">High School</option>
+                    <option value="Associate's Degree">Associate's Degree</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Doctorate">Doctorate</option>
+                </select>
+    
+                <label for="fieldOfEducation">Field of Education:</label>
+                <input type="text" id="fieldOfEducation" name="fieldOfEducation" required>
+    
+                <label for="occupation">Current Occupation:</label>
+                <input type="text" id="occupation" name="occupation" required>
+            </section>
+     -->
+            <!-- <section>
+                <h2>Message Section</h2>
+                <label for="sender">Your Username:</label>
+                <input type="text" id="sender" name="sender" required>
+    
+                <label for="recipient">Recipient's Username:</label>
+                <input type="text" id="recipient" name="recipient" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </section> -->
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- END -->
+
+    
+    <!-- END -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select-opt.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body></html>
+

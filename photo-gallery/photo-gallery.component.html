@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container mt-4" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+  <h2 class="section-heading text-center mb-4" style="color: #333; font-family: 'Arial', sans-serif;">Photo Gallery</h2>
+  
+  <div class="filter-container d-flex justify-content-center mb-4 p-3 bg-light rounded shadow">
+    <div class="filter-item d-flex align-items-center me-3">
+      <label for="ageFilter" class="fw-bold me-2">Age:</label>
+      <select id="ageFilter" class="form-select" (change)="filterPhotos()">
+        <option value="all">All</option>
+        <option value="below25">Below 25</option>
+        <option value="above25">Above 25</option>
+      </select>
+    </div>
+    
+    <div class="filter-item d-flex align-items-center">
+      <label for="genderFilter" class="fw-bold me-2">Gender:</label>
+      <select id="genderFilter" class="form-select" (change)="filterPhotos()">
+        <option value="all">All</option>
+        <option value="groom">Groom</option>
+        <option value="bride">Bride</option>
+      </select>
+    </div>
+  </div>
+  
+  <div *ngIf="loading" class="text-center text-secondary">Loading...</div>
+  <div *ngIf="error" class="text-center text-danger">{{ error }}</div>
+  <div *ngIf="!loading && !error" class="row g-4 justify-content-center">
+    <div *ngFor="let photo of filteredPhotos" class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100" (click)="logRid(photo.rid)" style="cursor: pointer;">
+        <img [src]="'data:image/jpeg;base64,' + photo.photograph" class="card-img-top" alt="User Photo" style="object-fit: cover; height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text fw-bold mb-1">Age: {{ photo.age }}</p>
+             </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

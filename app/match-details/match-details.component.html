@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container_inside mt-4" style="display: flex; justify-content: center;">
+  <div class="card" style="border: 1px solid #ccc; border-radius: 8px; padding: 20px; max-width: 400px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <div class="photo-container" style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <img *ngIf="photoUrl" [src]="photoUrl" alt="Photograph" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
+    </div>
+    <div class="info-container" style="text-align: center;">
+      <p><strong class="info-heading">First Name:</strong> <span class="details">{{ userInfo.firstName }}</span></p>
+      <p><strong class="info-heading">Last Name:</strong> <span class="details">{{ userInfo.lastName }} </span></p>
+      <p><strong class="info-heading">Gender:</strong> <span class="details">{{ userInfo.gender }}</span></p>
+      <p><strong class="info-heading">Education Level:</strong> <span class="details">{{ eduInfo.educationLevel }} </span></p>
+      <p><strong class="info-heading">Family Status:</strong> <span class="details">{{ familyInfo.familyStatus }} </span></p>
+      <p><strong class="info-heading">Age:</strong> <span class="details">{{ personalInfo.age }}</span></p>
+      <button type="button" class="btn btn-primary">Send Message</button>
+    </div>
+  </div>
+ 
+</div>
+
+<app-footer></app-footer>

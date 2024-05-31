@@ -1,0 +1,230 @@
+
+<!DOCTYPE html><html lang="en"><head>
+    <title>Wedding Matrimony</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#f6af04">
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+     <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\login\css\bootstrap.css">
+    <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\login\css\font-awesome.min.css">
+    <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\login\css\animate.min.css">
+    <link rel="stylesheet" href="D:\Personal projects\Angular-Firebase-crud-main\src\app\login\css\style.css"> 
+</head>
+
+<body>
+    <!-- HEADER & MENU -->
+    <div class="head-top">
+        <div class="container">
+            <div class="row">
+                <div class="lhs">
+                    <ul>
+                        <li><a href="#!" class="ser-open"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="rhs">
+                    <ul>
+                        <li><a href="tel:+9704462944"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;+91 9351300276</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; helpcompany.com</a></li> 
+                        <li><a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER & MENU -->
+
+    <!-- HEADER & MENU -->
+    <div class="hom-top">
+        <div class="container">
+            <div class="row">
+                <div class="hom-nav">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <span class="menu desk-menu">
+                            <i></i><i></i><i></i>
+                        </span>
+                        <a href="index.html" class="logo-brand"><img src="images/logo-b.png" alt="" loading="lazy" class="ic-logo"></a>
+                    </div>
+
+                    <!-- TOP MENU -->
+                    <div class="bl">
+                        <ul>
+                            <li class="smenu-pare">
+                                <span class="smenu">Explore</span>
+                                <div class="smenu-open smenu-box">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h4 class="tit">Explore category</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="smenu-pare">
+                                <span class="smenu">All pages</span>
+                                <div class="smenu-open smenu-multi">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                </div>
+                                            </div>
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                </div>
+                                            </div>
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                </div>
+                                            </div>
+                                            <div class="multi-col">
+                                                <div class="inn">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="multi-col full">
+                                                <div class="inn">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="smenu-pare">
+                                <span class="smenu">Top pages</span>
+                                <div class="smenu-open smenu-single">
+                                </div>
+                            </li>
+                            <li><a href="#">Plans</a></li>
+                            
+                            <li class="smenu-pare">
+                                <span class="smenu">Dashboard</span>
+                                <div class="smenu-open smenu-single">
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER & MENU -->
+
+    <!-- LOGIN -->
+    <section>
+        <div class="login">
+            <div class="container">
+                <div class="row">
+
+                    <div class="inn">
+                        <div class="lhs">
+                            <div class="tit">
+                                <h2>Now <b>Find <br> your life partner</b> Easy and fast.</h2>
+                            </div>
+                            <div class="im">
+                                <img src="images/login-couple.png" alt="">
+                            </div>
+                            <div class="log-bg"> &nbsp;</div>
+                        </div>
+                        <div class="rhs">
+                            <div>
+                                <div class="form-tit">
+                                    <h4>Start for free</h4>
+                                    <h1>Sign in to Matrimony</h1>
+                                    <p>Not a member? <a href="/register">Sign up now</a></p>
+                                </div>
+                                <div class="form-login">
+                                    <form (ngSubmit)="formsubmit()">
+                                        <div class="form-group">
+                                            <label class="lb">Email:</label>
+                                            <input [(ngModel)]="user.email"  type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="lb">Password:</label>
+                                            <input [(ngModel)]="user.password" type="text" class="form-control" id="pwd" placeholder="Enter password" name="password"[(ngModel)]="password">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" name="agree"> Remember
+                                                me
+                                            </label>
+                                            
+                                        </div>
+                                        <a href="/forgot-password">Forgot Password?</a>
+                                        <button type="submit" class="btn btn-primary"(click)="login()" style="background-color: #f6af04;">Sign in</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END -->
+
+    
+    <!-- END -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select-opt.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body></html>
+
+<!-- 
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <h4 class="text-dark text-muted">Login</h4>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                        </div>
+                        <button type="button" class="btn btn-info" (click)="login()">Login</button>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="/register" style="text-decoration: none;">Need Account ? <span class="text-danger">Register</span></a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="/forgot-password" class="text-dark" style="text-decoration: none;"> Forgot Password ? </a>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <a (click)="signInWithGoogle()" style="text-decoration: none;cursor: pointer;">
+                                <div class="card shadow text-center">
+                                    <div class="card-body">
+                                        <img src="../../../assets/icons8-google-48.png" alt="" height="24px" width="24px"> Sign In with Google
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div> -->
