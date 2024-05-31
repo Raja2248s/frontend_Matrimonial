@@ -8,14 +8,22 @@ import { UserData } from '../user-data';
 export class RegisterService {
   private baseURL = 'http://localhost:8086'
   constructor(private http:HttpClient) { 
-    
+  }
+
+  public addMessage(user : any):Observable<any>{
+    return this.http.post(`${this.baseURL}/message` , user);
   }
   public addUser(user:any):Observable<any>{
     return this.http.post("http://localhost:8086/reg",user);
   }
+  
+  public getRegistrationinfobyid(id : number):Observable<any>{
+    return this.http.get(`${this.baseURL}/reg/id/${id}`);
+  }
   public addUserinfo(user:any):Observable<any>{
     return this.http.post("http://localhost:8086/user",user);
   }
+  
   public addPersonalinfo(formData :FormData):Observable<any>{
     console.log("Inside services of personal")
     return this.http.post("http://localhost:8086/personal",formData);
@@ -57,6 +65,7 @@ export class RegisterService {
     return this.http.get<any[]>(`${this.baseURL}/user`);
   }
 
+  
 
   public getuserinfoByid(id : number):Observable<any>{
   
