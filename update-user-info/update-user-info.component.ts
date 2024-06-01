@@ -48,6 +48,7 @@ export class UpdateUserInfoComponent implements OnInit  {
           response =>{
             console.log('user Info updated sucessfully' , response);
             alert("user Info updated sucessfully")
+            
           }
          )
   }

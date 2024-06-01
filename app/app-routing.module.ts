@@ -28,6 +28,7 @@ import { UserdeatailsComponent } from './userdeatails/userdeatails.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatchDetailsComponent } from './match-details/match-details.component';
 import { MessageComponent } from './message/message.component';
+import { AboutComponent } from './about/about/about.component';
 
 const routes: Routes = [
    {path: '', redirectTo:'home', pathMatch:'full'},
@@ -47,17 +48,18 @@ const routes: Routes = [
   {path:'user_info' , component:UserInfoComponent},
   {path:'home' , component:HomeComponent},
   {path:"reset" , component:ResetPasswordComponent},
-  {path:"admin" , component:AdminComponent},
-  {path:"details" , component:DetailsComponent},  
-  {path:"update-user-info" , component:UpdateUserInfoComponent},
-  {path:"update-personal-info" , component:UpdatePersonalInfoComponent},
-  {path:"update-family-info" , component:UpdateFamilyInfoComponent},
-  {path:"update-education-info" , component:UpdateEducationInfoComponent},
-  {path:'photo-gallery' , component:PhotoGalleryComponent},
-  {path:'userdetails' , component:UserdeatailsComponent},
+  {path:"admin" , component:AdminComponent , canActivate:[authGuard]},
+  {path:"details" , component:DetailsComponent , canActivate:[authGuard]},  
+  {path:"update-user-info" , component:UpdateUserInfoComponent , canActivate:[authGuard]},
+  {path:"update-personal-info" , component:UpdatePersonalInfoComponent , canActivate:[authGuard]},
+  {path:"update-family-info" , component:UpdateFamilyInfoComponent , canActivate:[authGuard]},
+  {path:"update-education-info" , component:UpdateEducationInfoComponent , canActivate:[authGuard]},
+  {path:'photo-gallery' , component:PhotoGalleryComponent , canActivate:[authGuard]},
+  {path:'userdetails' , component:UserdeatailsComponent , canActivate:[authGuard]},
   {path:'footer',  component:FooterComponent},
-  {path:'match-details' , component:MatchDetailsComponent},
-  {path:'message' , component:MessageComponent}
+  {path:'match-details' , component:MatchDetailsComponent , canActivate:[authGuard]},
+  {path:'message' , component:MessageComponent},
+  {path:'about' , component:AboutComponent , canActivate:[authGuard]}
 ];
 
 @NgModule({

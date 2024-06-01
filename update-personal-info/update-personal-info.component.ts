@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RegisterService } from 'src/app/services/register.service';
 
 @Component({
@@ -15,7 +15,7 @@ export class UpdatePersonalInfoComponent implements OnInit {
   bloodGroup: string = '';
   photo: File | null = null;
 
- constructor(private registerService : RegisterService , private route:ActivatedRoute){}
+ constructor(private registerService : RegisterService , private route:ActivatedRoute , private router : Router){}
   
  public user = {
     rid: 0,
@@ -29,7 +29,7 @@ export class UpdatePersonalInfoComponent implements OnInit {
   
 
  ngOnInit(): void {
-  const id =52;
+
 
   this.route.queryParams.subscribe(params =>{
    this.user.personalId=params['id'];
@@ -37,7 +37,7 @@ export class UpdatePersonalInfoComponent implements OnInit {
   })
 
 
-   this.registerService.getpersonalinfoByid(id).subscribe(
+   this.registerService.getpersonalinfoByid(this.user.personalId).subscribe(
     data =>{
          this.user=data;
         //  this.photoUrl=  this.createImageUrl(data.photograph);
@@ -59,7 +59,8 @@ export class UpdatePersonalInfoComponent implements OnInit {
     }
          this.registerService.updatePersonalinfo(formData , this.user.personalId).subscribe(
           (data)=>{
-            alert("profile updated sucessfully");    
+            alert("profile updated sucessfully");   
+            this.router.navigate(['admin']); 
           }
          )
   }
@@ -88,7 +89,7 @@ this.registerService.getpersonalinfoByid(this.user.personalId).subscribe(
   }
 
 
-  onFileSelcetd(event: any) {
+  onFileSelected(event: any) {
     
     if (event.target.files && event.target.files.length > 0) {
       console.log("Photograph is correct");

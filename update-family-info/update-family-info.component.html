@@ -1,33 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Family Info</title>
+    <style>
+        /* Add this CSS to your stylesheet */
+        body {
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(to right, #ff6f61, #ff9a44); /* Gradient background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow for elevation */
+            color: #ffffff; /* Text color */
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 28px; /* Increase font size */
+            margin-bottom: 30px; /* Adjust margin */
+        }
+        
+        label {
+            font-size: 18px; /* Increase font size */
+            margin-bottom: 15px; /* Adjust margin */
+            display: block;
+        }
+        
+        input[type="text"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px; /* Adjust margin */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px; /* Decrease font size */
+            background-color: #f2f2f2; /* Light gray background */
+            color: #333333; /* Text color */
+        }
+        
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px; /* Adjust padding */
+            font-size: 18px; /* Increase font size */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px; /* Add margin to separate from the input fields */
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <app-header></app-header>
-<!-- src/app/update-user-info/update-user-info.component.html -->
-<div class="container">
-    <h2>Update User Info</h2>
-    <form (ngSubmit)="updateFamilyInfo()" class="user-info-form">
-      <div class="form-group">
-        <label for="fatherName">father Name </label>
-        <input type="text" id="fatherName" [(ngModel)]="familyInfo.fatherName" name="fatherName" class="form-control" required>
-      </div>
-
-      <div class="form-group">
-        <label for="familyStatus">Family Status</label>
-        <select id="familyStatus" [(ngModel)]="familyInfo.familyStatus" name="familyStatus" class="form-control" required>
-          <option value="Single">Single</option>
-          <option value="Married">Married</option>
-          <option value="Divorced">Divorced</option>
-          <option value="Widowed">Widowed</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="familyType">Family Type</label>
-        <select id="familyType" [(ngModel)]="familyInfo.familyType" name="familyType" class="form-control" required>
-          <option value="Nuclear">Nuclear</option>
-          <option value="Extended">Extended</option>
-          <option value="Single Parent">Single Parent</option>
-          <option value="Blended">Blended</option>
-        </select>
-      </div>
-      
-      <!-- Add more fields as needed -->
-      <button type="submit" class="btn btn-primary">Update</button>
-    </form>
-</div>
+<body>
+    <div class="container">
+        <h2>Update Family Info</h2>
+        <form (ngSubmit)="updateFamilyInfo()" class="user-info-form">
+            <div class="form-group">
+                <label for="fatherName">Father's Name</label>
+                <input type="text" id="fatherName" [(ngModel)]="familyInfo.fatherName" name="fatherName" class="form-control" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="familyStatus">Family Status</label>
+                <select id="familyStatus" [(ngModel)]="familyInfo.familyStatus" name="familyStatus" class="form-control" required>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="familyType">Family Type</label>
+                <select id="familyType" [(ngModel)]="familyInfo.familyType" name="familyType" class="form-control" required>
+                    <option value="Nuclear">Nuclear</option>
+                    <option value="Extended">Extended</option>
+                    <option value="Single Parent">Single Parent</option>
+                    <option value="Blended">Blended</option>
+                </select>
+            </div>
+            
+            <!-- Add more fields as needed -->
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</body>
+<app-footer></app-footer>
+</html>

@@ -73,6 +73,7 @@ import { UserdeatailsComponent } from './userdeatails/userdeatails.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatchDetailsComponent } from './match-details/match-details.component';
 import { MessageComponent } from './message/message.component';
+import { AboutComponent } from './about/about/about.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +101,8 @@ import { MessageComponent } from './message/message.component';
    UserdeatailsComponent,
    FooterComponent,
    MatchDetailsComponent,
-   MessageComponent
+   MessageComponent,
+   AboutComponent
     
   ],
   imports: [
