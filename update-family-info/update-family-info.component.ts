@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RegisterService } from 'src/app/services/register.service';
 
 @Component({
@@ -17,7 +17,7 @@ export class UpdateFamilyInfoComponent implements OnInit {
     familyType:'',
     fatherName:'',
   }
-  constructor(private registerService : RegisterService, private route : ActivatedRoute){}
+  constructor(private registerService : RegisterService, private route : ActivatedRoute , private router : Router){}
   ngOnInit(): void {
     this.route.queryParams.subscribe(params =>{
       this.familyInfo.familyinfoId=params['id'];
@@ -43,6 +43,7 @@ export class UpdateFamilyInfoComponent implements OnInit {
     response =>{
       console.log('family info updated succesfully' ,response);
       alert("family info updated succesfully")
+      this.router.navigate(['profile']); 
     }
   )
   }

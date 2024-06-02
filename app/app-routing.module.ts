@@ -29,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MatchDetailsComponent } from './match-details/match-details.component';
 import { MessageComponent } from './message/message.component';
 import { AboutComponent } from './about/about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
    {path: '', redirectTo:'home', pathMatch:'full'},
@@ -59,7 +60,8 @@ const routes: Routes = [
   {path:'footer',  component:FooterComponent},
   {path:'match-details' , component:MatchDetailsComponent , canActivate:[authGuard]},
   {path:'message' , component:MessageComponent},
-  {path:'about' , component:AboutComponent , canActivate:[authGuard]}
+  {path:'about' , component:AboutComponent , canActivate:[authGuard]},
+  {path:'contact' , component:ContactComponent}
 ];
 
 @NgModule({

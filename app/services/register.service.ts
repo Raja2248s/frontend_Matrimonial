@@ -146,6 +146,13 @@ export class RegisterService {
     return this.http.post(`${this.baseURL}/reg`, user);
   }
 
+  public addcontact(user : any):Observable<any>{
+    return this.http.post(`${this.baseURL}/contact`,user);
+  }
+
+  public getcontact(email:string):Observable<any>{
+    return  this.http.get(`${this.baseURL}/contact/{email}`);
+  }
   public getRegistrationinfobyid(id: number): Observable<any> {
     return this.http.get(`${this.baseURL}/reg/id/${id}`);
   }

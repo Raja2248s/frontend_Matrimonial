@@ -103,7 +103,7 @@
                         <div><strong class="info-heading">Gender:</strong> <span class="details">{{ userInfo.gender }}</span></div>
                         <div><strong class="info-heading">Date of Function:</strong> <span class="details">{{ userInfo.dateofFunction }}</span></div>
                         <div><strong class="info-heading">Mobile Number:</strong> <span class="details">{{ userInfo.mobileNum }}</span></div>
-                        <button type="button" class="btn btn-info button" style="height: 40px;" (click)="navigatetoUpdate('user-info', userInfo.userId)">Update User Info</button>
+                        <!-- <button type="button" class="btn btn-info button" style="height: 40px;" (click)="navigatetoUpdate('user-info', userInfo.userId)">Update User Info</button> -->
                     </div>
                 </div>
             </mat-tab>
@@ -116,7 +116,7 @@
                             <label class="info-heading">Photograph:</label>
                             <img *ngIf="photoUrl" [src]="photoUrl" alt="Photograph" class="img-thumbnail" />
                         </div>
-                        <button type="button" class="btn btn-info button" (click)="navigatetoUpdate('personal-info', personalInfo.personalId)">Update Personal Info</button>
+                        <!-- <button type="button" class="btn btn-info button" (click)="navigatetoUpdate('personal-info', personalInfo.personalId)">Update Personal Info</button> -->
                     </div>
                 </div>
             </mat-tab>
@@ -126,7 +126,7 @@
                         <div><strong class="info-heading">Family Status:</strong> <span class="details">{{ familyInfo.familyStatus }}</span></div>
                         <div><strong class="info-heading">Family Type:</strong> <span class="details">{{ familyInfo.familyType }}</span></div>
                         <div><strong class="info-heading">Father's Name:</strong> <span class="details">{{ familyInfo.fatherName }}</span></div>
-                        <button type="button" class="btn btn-info button" (click)="navigatetoUpdate('family-info', familyInfo.familyinfoId)">Update Family Info</button>
+                        <!-- <button type="button" class="btn btn-info button" (click)="navigatetoUpdate('family-info', familyInfo.familyinfoId)">Update Family Info</button> -->
                     </div>
                 </div>
             </mat-tab>
@@ -135,7 +135,7 @@
                     <div class="card-body">
                         <div><strong class="info-heading">Education Level:</strong> <span class="details">{{ eduInfo.educationLevel }}</span></div>
                         <div><strong class="info-heading">Education Field:</strong> <span class="details">{{ eduInfo.educationFiled }}</span></div>
-                        <button type="button" class="btn btn-info button" (click)="navigatetoUpdate('education-info', eduInfo.educationId)">Update Education Info</button>
+                        <!-- <button type="button" class="btn btn-info button" (click)="navigatetoUpdate('education-info', eduInfo.educationId)">Update Education Info</button> -->
                     </div>
                 </div>
             </mat-tab>
